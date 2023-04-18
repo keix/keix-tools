@@ -1,0 +1,21 @@
+#!/bin/sh
+
+endpoint="https://coincheck.com/api/ticker"
+
+case $1 in
+    btc)
+        curl "${endpoint}?pair=btc_jpy"
+        ;;
+    etc)
+        curl "${endpoint}?pair=etc_jpy"
+        ;;
+    lsk)
+        curl "${endpoint}?pair=lsk_jpy"
+        ;;
+    mona)
+        curl "${endpoint}?pair=mona_jpy"
+        ;;
+    *)
+        curl "${endpoint}"
+        ;;
+esac
