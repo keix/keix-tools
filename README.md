@@ -23,3 +23,9 @@ To use coincheck tool, do the following
 ```
  $ coincheck bit_jpy
 ```
+
+To obtain the global IP address, execute the following command."
+
+```
+ $ get-ipaddress
+```
